@@ -6,11 +6,19 @@
 - Pre-recorded video materials for self-paced study and helpdesk Q&A available in the [VLE](https://www.vle.cam.ac.uk/course/view.php?id=106822)
 
 
+
 ## Contents
 
 - [Overview](README.md#overview)
 - [Setup](README.md#setup)
+  - [Data](README.md#data)
+  - [Command line](README.md#command-line)
 - [Introducing the command line](README.md#introducing-the-command-line)
+  - [Access the command line](README.md#access-the-command-line)
+  - [Navigating your file system](README.md#navigating-your-file-system)
+  - [Tab completion](README.md#tab-completion)
+  - [Summary 1](README.md#summary-1)
+
 
 
 ## Overview
@@ -20,13 +28,16 @@ Within the **Data Science for Bioinformatics** block, we are introducing the Uni
 Using the command line interface, we will demonstrate the basic structure of the Unix operating system and how we can interact with it using a basic set of commands. Applying this, we will learn how to navigate the filesystem, manipulate text-based data e.g. DNA sequencing fastq files and structure a simple pipeline out of these commands.
 
 
+
 ## Setup
 
 It is possible to work through the practical on your laptop or local machine. To do this, you will need to download the data that we will use in the practical and start/install the command line if not available in your device. Instructions for doing this are below.
 
+
 ### Data
 
 The data is available to download [here](https://github.com/semacu/2021-intro-command-line/blob/main/data/shell_data.zip). Click the `Download` button and save the `shell_data.zip` file into your Desktop. Then navigate to your Desktop and double-click on the zip file to uncompress it. A directory call `shell_data/` should be available
+
 
 ### Command line
 
@@ -35,6 +46,7 @@ The data is available to download [here](https://github.com/semacu/2021-intro-co
 **Windows**: computers with Windows do not automatically have a Unix command line program installed. To install the Unix command line in Windows, follow this [video](https://www.youtube.com/watch?v=339AEqk9c-8) and/or the instructions available in the Windows tab [here](https://carpentries.github.io/workshop-template/#shell)
 
 **Linux**: use the Terminal icon displayed in the main toolbar of most distributions (e.g. Ubuntu) to open the command line
+
 
 
 ## Introducing the command line
@@ -48,9 +60,11 @@ There are many reasons to learn about the shell:
 - The command line makes your computational work less error-prone and more reproducible. Your computer keeps a record of every step that you’ve carried out and others can check your work or apply your process to new data
 - Most supercomputers or cloud computing for running expensive calculations can only be accessed through the command line
 
+
 ### Access the command line
 
 To start the command line depending on your operating system, have a look at the [Setup section](README.md#setup). We will spend most of our time learning about the basics of the command line by manipulating some experimental data
+
 
 ### Navigating your file system
 
@@ -140,9 +154,12 @@ SRR097977.fastq		SRR098026.fastq
 
 This directory contains two files with `.fastq` extensions. fastq is a format for storing information about sequencing reads and their quality. 
 
-### Shortcut: Tab Completion
 
-### Summary
+### Tab Completion
+
+
+### Summary 1
+
 
 
 ## License
