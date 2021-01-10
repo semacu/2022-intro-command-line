@@ -15,7 +15,7 @@ Using the command line interface (also known as *bash*), we will demonstrate the
 
 ### Setup
 
-The data available for the practical is available to download [here]
+The data that we will use in the practical is available to download [here](https://github.com/semacu/2021-intro-command-line/blob/main/data/shell_data.zip). Click the `Download` button
 
 
 ### License
