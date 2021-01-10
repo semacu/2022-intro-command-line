@@ -2,7 +2,7 @@
 
 # Introduction to the Command Line
 
-- Delivered on Monday 18th January 2021 3-5pm (GMT)
+- Practical: Monday 18th January 2021 3-5pm (GMT)
 - Pre-recorded video materials for self-paced study and helpdesk Q&A available in the [VLE](https://www.vle.cam.ac.uk/course/view.php?id=106822)
 
 
@@ -48,8 +48,9 @@ There are many reasons to learn about the shell:
 - The command line makes your computational work less error-prone and more reproducible. Your computer keeps a record of every step that you’ve carried out and others can check your work or apply your process to new data
 - Most supercomputers or cloud computing for running expensive calculations can only be accessed through the command line
 
-To start the command line depending on your operating system, have a look at the [Setup section](README.md#setup). We will spend most of our time learning about the basics of the command line by manipulating some experimental data
+### Access the command line
 
+To start the command line depending on your operating system, have a look at the [Setup section](README.md#setup). We will spend most of our time learning about the basics of the command line by manipulating some experimental data
 
 ### Navigating your file system
 
@@ -60,7 +61,7 @@ Let’s find out where we are by running a command called `pwd` (which stands fo
 ```bash
 $ pwd
 ```
-```bash
+```
 /Users/kzqv978
 ```
 
@@ -93,9 +94,55 @@ $ ls
 sra_metadata	untrimmed_fastq
 ```
 
+We can make the ls output more comprehensible by using the flag -F, which tells ls to add a trailing / to the names of directories:
 
+```bash
+$ ls -F
+```
+```
+sra_metadata/		untrimmed_fastq/
+```
 
+Anything with a "/" after it is a directory. Things with an asterisk after them are programs. If there are no decorations, it’s a file.
 
+`ls` has lots of other options. To find out what they are, we can type:
+
+```bash
+$ man ls
+```
+
+`man` (short for manual) displays detailed documentation (also referred as man page or man file) for commands. It is a powerful resource to explore commands, understand their usage and flags. Some manual files are very long. You can scroll through the file using your keyboard’s down arrow or use the `Space` key to go forward one page and the `b` key to go backwards one page. When you are done reading, hit `q` to quit.
+
+The option `-l` option for the `ls` command is used often as it displays more detailed information for each item in the directory:
+
+```bash
+$ ls -l
+```
+```
+total 0
+drwxr-x---@ 3 kzqv978  RD\Domain Users    96B 30 Jul  2015 sra_metadata
+drwxr-xr-x@ 4 kzqv978  RD\Domain Users   128B 15 Nov  2017 untrimmed_fastq
+```
+
+The additional information given includes the name of the owner of the file, when the file was last modified, and whether the current user has permission to read and write to the file, as we will see later
+
+No one can possibly learn all of these arguments, that’s what the manual page is for. You can (and should) refer to the manual page or other help files as needed.
+
+Let’s go into the `untrimmed_fastq` directory and see what is in there.
+
+```bash
+$ cd untrimmed_fastq
+$ ls -F
+```
+```
+SRR097977.fastq		SRR098026.fastq
+```
+
+This directory contains two files with `.fastq` extensions. fastq is a format for storing information about sequencing reads and their quality. 
+
+### Shortcut: Tab Completion
+
+### Summary
 
 
 ## License
