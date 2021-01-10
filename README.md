@@ -15,12 +15,17 @@ Using the command line interface (also known as *bash*), we will demonstrate the
 
 ## Setup
 
+It is possible to work through the practical on your laptop or local machine. To do this, you will need to download the data that we will use in the practical and start/install the command line if not available in your device. Instructions for doing this are below.
+
 ### Data
 
-The data that we will use in the practical is available to download [here](https://github.com/semacu/2021-intro-command-line/blob/main/data/shell_data.zip). Click the `Download` button and save the `shell_data.zip` file into your Desktop. Then navigate to your Desktop and double-click on the zip file to uncompress it. A directory call `shell_data/` should be available
+The data is available to download [here](https://github.com/semacu/2021-intro-command-line/blob/main/data/shell_data.zip). Click the `Download` button and save the `shell_data.zip` file into your Desktop. Then navigate to your Desktop and double-click on the zip file to uncompress it. A directory call `shell_data/` should be available
 
-### Software
+### Command line
 
+**MacOS**: to start the command line go to `Applications` -> `Utilities` -> `Terminal`. Alternatively, in your keyboard press the Command button and the space bar  simultaneously, type "Terminal" (as you type it should auto-fill) and double click "Terminal" in the left sidebar
+
+**Windows**: computers with Windows do not automatically have a Unix command line program installed. To install the Unix command line in Windows, follow the video and instructions available in the Windows tab in [here](https://carpentries.github.io/workshop-template/#shell)
 
 
 ## License
