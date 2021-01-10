@@ -15,7 +15,7 @@ Using the command line interface (also known as *bash*), we will demonstrate the
 
 ### Setup
 
-The data that we will use in the practical is available to download [here](https://github.com/semacu/2021-intro-command-line/blob/main/data/shell_data.zip). Click the `Download` button
+The data that we will use in the practical is available to download [here](https://github.com/semacu/2021-intro-command-line/blob/main/data/shell_data.zip). Click the `Download` button and save the `shell_data.zip` file into your `Desktop`. Then navigate to your Desktop and double-click on the zip file to uncompress it. A directory call `shell_data/` should now be available
 
 
 ### License
