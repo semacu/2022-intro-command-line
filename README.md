@@ -13,7 +13,12 @@ Within the **Data Science for Bioinformatics** block, we are introducing the com
 Using the command line interface (also known as *bash*), we will demonstrate the basic structure of the UNIX operating system and how we can interact with it using a basic set of commands. Applying this, we will learn how to navigate the filesystem, manipulate text-based data e.g. DNA sequencing fastq files and structure a simple pipeline out of these commands.
 
 
+### Setup
+
+The data available for the practical is available to download [here]
+
+
 ### License
 
-This practical is derived from the [Introduction to the Command Line for Genomics](https://datacarpentry.org/shell-genomics/) copyright by The Carpentries and distributed unner a [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/)
+This practical is derived from the [Introduction to the Command Line for Genomics](https://datacarpentry.org/shell-genomics/) &copy; The Carpentries and distributed under a [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/)
 
