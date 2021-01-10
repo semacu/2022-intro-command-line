@@ -25,5 +25,5 @@ The data that we will use in the practical is available to download [here](https
 
 ## License
 
-This practical is derived from the [Introduction to the Command Line for Genomics](https://datacarpentry.org/shell-genomics/) &copy; The Carpentries and distributed under a [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/)
+This practical is derived from the [Introduction to the Command Line for Genomics](https://datacarpentry.org/shell-genomics/) &copy; The Carpentries, which is distributed under a [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/)
 
