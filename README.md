@@ -7,4 +7,8 @@
 
 ### Overview
 
-Within the **Data Science for Bioinformatics** block, we are introducing the command line, which is a popular and important tool essential for bioinformatics and driven the data-driven approach of answering research questions, . Knowledge gained from this practical can be applied and transferred to different research domains.
+Within the **Data Science for Bioinformatics** block, we are introducing the command line, which is a popular and important tool essential for bioinformatics. As part of a data-driven approach to answering research questions, the knowledge gained from this practical can be applied and transferred to different research domains.
+
+Using the command line interface (also known as *bash*), we will demonstrate the basic structure of the UNIX operating system and how we can interact with it using a basic set of commands. Applying this, we will learn how to navigate the filesystem, manipulate text-based data e.g. DNA sequencing fastq files and structure a simple pipeline out of these commands.
+
+
