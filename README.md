@@ -25,7 +25,7 @@
 
 Within the **Data Science for Bioinformatics** block, we are introducing the Unix command line (also known as *bash* or *shell*), which is a popular and important tool essential for bioinformatics. As part of a data-driven approach to answering research questions, the knowledge gained from this practical can be applied and transferred to different research domains.
 
-Using the command line interface, we will demonstrate the basic structure of the Unix operating system and how we can interact with it using a basic set of commands. Applying this, we will learn how to navigate the filesystem, manipulate text-based data e.g. DNA sequencing fastq files and structure a simple pipeline out of these commands.
+Using the command line interface, we will demonstrate the basic structure of the Unix operating system and how we can interact with it using a basic set of commands. Applying this, we will learn how to navigate the filesystem, manipulate text-based data e.g. DNA sequencing `fastq` files and structure a simple pipeline out of these commands.
 
 
 
