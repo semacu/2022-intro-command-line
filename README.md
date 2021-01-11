@@ -157,8 +157,79 @@ This directory contains two files with `.fastq` extensions. fastq is a format fo
 
 ### Tab Completion
 
+Typing out file or directory names can waste a lot of time and it’s easy to make typing mistakes. Instead we can use tab to autocomplete names as a shortcut. When you start typing out the name of a file or directory, then hit the `Tab` keyboard key, the command line will try to fill in the rest of the directory or file name.
+
+Return to your Desktop:
+
+```bash
+$ cd ~/Desktop  # in command line jargon ~ means the home directory 
+```
+
+then enter:
+
+```bash
+$ cd she<tab>
+```
+
+Once you press `Tab`, the command line will fill in the rest of the directory name for `shell_data`
+
+Now change directories to `untrimmed_fastq` in `shell_data`
+
+```bash
+$ cd shell_data
+$ cd untrimmed_fastq
+```
+
+Using tab complete can be very helpful. However, it will only autocomplete a file or directory name if you have typed enough characters to provide a unique identifier for the file or directory you are trying to access.
+
+For example, if we now try to list the files which names start with `SR` by using tab complete:
+
+```bash
+$ ls SR<tab>
+```
+
+The shell auto-completes your command to `SRR09`, because all file names in the directory begin with this prefix. When you hit `Tab` again, the shell will list the possible choices.
+
+```bash
+$ ls SRR09<tab><tab>
+```
+```
+SRR097977.fastq  SRR098026.fastq
+```
+
+Tab completion can also fill in the names of programs, which can be useful if you remember the beginning of a program name.
+
+```bash
+$ pw<tab><tab>
+```
+```
+pwd         pwd_mkdb    pwhich      pwhich5.18  pwhich5.28  pwpolicy    
+```
+
+Please note that the results of the latter command will be different depending on your operating system
+
 
 ### Summary 1
+
+We now know how to move around our file system using the command line. This gives us an advantage over interacting with the file system through a GUI (e.g. Finder in MacOS) as it allows us to work on a remote server, carry out the same set of operations on a large number of files quickly, and opens up many opportunities for using bioinformatics software that is only available in command line versions.
+
+In the next sections, we’ll be expanding on these skills and seeing how using the command line shell enables us to make our workflow more efficient and reproducible.
+
+Key points:
+
+- The command line gives you the ability to work more efficiently by using keyboard commands rather than a GUI
+- Useful commands for navigating your file system include: `ls`, `pwd` and `cd`
+- Most commands take options (flags) which begin with the symbol `-`
+- Tab completion can reduce errors from mistyping and make work more efficient in the shell
+
+
+
+## 5 min break
+
+Take a short break before starting with the next section
+
+
+
 
 
 
