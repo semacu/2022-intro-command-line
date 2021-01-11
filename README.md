@@ -19,6 +19,12 @@
   - [Navigating your file system](README.md#navigating-your-file-system)
   - [Tab completion](README.md#tab-completion)
   - [Summary 1](README.md#summary-1)
+- [Navigating Files and Directories](README.md#)
+  - [Moving around the file system](README.md#)
+  - [Examining the contents of other directories](README.md#)
+  - [Full versus Relative paths](README.md#)
+  - [Exercise 1](README.md#)
+  - [Summary 2](README.md#)
 
 
 
