@@ -230,10 +230,11 @@ Key points:
 - Tab completion can reduce errors from mistyping and make work more efficient in the shell
 
 
+<img align="right" src=img/coffee.png width="300">
 
 ## 5 min break
 
-Take a short break before starting with the next section
+Take a short break before the next section
 
 
 
