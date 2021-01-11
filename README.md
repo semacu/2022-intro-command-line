@@ -65,6 +65,8 @@ There are many reasons to learn about the command line:
   <img width="500" src=img/cli_vs_gui.png>
 </p>
 
+<div align="center">Figure 1. Command line (top) vs GUI (bottom)</div>
+
 
 ### Access the command line
 
