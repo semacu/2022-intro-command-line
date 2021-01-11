@@ -25,6 +25,13 @@
   - [Full versus Relative paths](README.md#)
   - [Exercise 1](README.md#)
   - [Summary 2](README.md#)
+- [Working with Files and Directories](README.md#)
+  - [Working with Files](README.md#)
+  - [Command History](README.md#)
+  - [Examining Files](README.md#)
+  - [Creating, moving, copying, and removing](README.md#)
+  - [Exercise 2](README.md#)
+  - [Summary 3](README.md#)
 
 
 
@@ -249,5 +256,7 @@ Take a short break before the next section
 
 ## License
 
-This practical is derived from the [Introduction to the Command Line for Genomics](https://datacarpentry.org/shell-genomics/) &copy; The Carpentries, which is distributed under a [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/)
+This practical is derived from the workshop [Introduction to the Command Line for Genomics](https://datacarpentry.org/shell-genomics/) &copy; The Carpentries, which is distributed under a [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/)
+
+For further command line topics including redirection, writing scripts and project organisation, check out episodes 4-6 of the Carpentries workshop
 
