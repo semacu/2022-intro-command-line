@@ -256,7 +256,5 @@ Take a short break before the next section
 
 ## License
 
-This practical is derived from the workshop [Introduction to the Command Line for Genomics](https://datacarpentry.org/shell-genomics/) &copy; The Carpentries, which is distributed under a [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/)
-
-For further command line topics including redirection, writing scripts and project organisation, check out episodes 4-6 of the Carpentries workshop
+This practical is derived from the workshop [Introduction to the Command Line for Genomics](https://datacarpentry.org/shell-genomics/) &copy; The Carpentries, which is distributed under a [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/). For further command line topics including redirection, writing scripts and project organisation, check out episodes 4-6 of the Carpentries workshop
 
