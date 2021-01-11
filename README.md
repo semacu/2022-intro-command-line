@@ -4,7 +4,7 @@
 
 - Practical: Monday 18th January 2021 3-5pm (GMT)
 - Pre-recorded video materials for self-paced study and helpdesk Q&A available in the [VLE](https://www.vle.cam.ac.uk/course/view.php?id=106822)
-- Course [booklet](misc/NSTIIBBSBioinformatics_20-21.pdf)
+- Course [booklet](https://e.issuu.com/anonymous-embed.html?u=bioinfocambs&d=nstiibbsbioinformatics_20-21)
 
 
 
