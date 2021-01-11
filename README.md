@@ -61,7 +61,9 @@ There are many reasons to learn about the command line:
 - The command line makes your computational work less error-prone and more reproducible. Your computer keeps a record of every step that you’ve carried out and others can check your work or apply your process to new data
 - Most supercomputers or cloud computing for running expensive calculations can only be accessed through the command line
 
-<img align="center" src=img/cli_vs_gui.png width="200">
+<p align="center">
+  <img width="500" src=img/cli_vs_gui.png>
+</p>
 
 
 ### Access the command line
