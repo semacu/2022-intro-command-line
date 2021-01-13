@@ -64,10 +64,10 @@ A **command line** is a computer program that presents an interface which allows
 
 There are many reasons to learn about the command line:
 
-- Many bioinformatics tools can only be used through a command line interface, or have extra capabilities in the command line version that are not available in the GUI
-- Learning command line will allow you to automate repetitive tasks and leave you free to do more exciting things
-- The command line makes your computational work less error-prone and more reproducible. Your computer keeps a record of every step that you’ve carried out and others can check your work or apply your process to new data
-- Most supercomputers or cloud computing for running expensive calculations can only be accessed through the command line
+- *Many bioinformatics tools can only be used through a command line interface*, or have extra capabilities in the command line version that are not available in the GUI
+- *Learning command line will allow you to automate repetitive tasks* and leave you free to do more exciting things
+- *The command line makes your computational work less error-prone and more reproducible*. Your computer keeps a record of every step that you’ve carried out and others can check your work or apply your process to new data
+- *Most supercomputers and cloud computing systems for running intense calculations can only be accessed through the command line*
 
 <p align="center">
   <img width="500" src=img/cli_vs_gui.png>
