@@ -15,11 +15,12 @@
   - [Command line](README.md#command-line)
 - [Introducing the command line](README.md#introducing-the-command-line)
   - [Access the command line](README.md#access-the-command-line)
-  - [Navigating your file system](README.md#navigating-your-file-system)
+  - [Navigating your filesystem](README.md#navigating-your-file-system)
   - [Tab completion](README.md#tab-completion)
   - [Summary 1](README.md#summary-1)
-- [Navigating Files and Directories](README.md#)
-  - [Moving around the file system](README.md#)
+- [Navigating Files and Directories](README.md#navigating-diles-and-directories)
+  - [Moving around the filesystem](README.md#moving-around-the-filesystem)
+  - [Hidden directories](README.md#hidden-directories)
   - [Examining the contents of other directories](README.md#)
   - [Full versus Relative paths](README.md#)
   - [Exercise 1](README.md#)
@@ -81,11 +82,11 @@ There are many reasons to learn about the command line:
 To start the command line depending on your operating system, have a look at the [Setup section](README.md#setup). We will spend most of our time learning about the basics of the command line by manipulating some experimental data
 
 
-### Navigating your file system
+### Navigating your filesystem
 
 The part of the operating system responsible for managing files and directories is called the *filesystem*. It organizes our data into files, which hold information, and directories (also called "folders"), which hold files or other directories. Several commands are frequently used to create, inspect, rename, and delete files and directories.
 
-Let’s find out where we are by running a command called `pwd` (which stands for "print working directory"). At any moment, our current working directory is our current default directory, i.e., the directory that the computer assumes we want to run commands in, unless we explicitly specify something else. Here, my laptop's macOS response is `/Users/kzqv978`:
+Let’s find out where we are by running a command called `pwd` (which stands for "print working directory"). At any moment, our current working directory is our current default directory, i.e., the directory that the computer assumes we want to run commands in, unless we explicitly specify something else. Here, my laptop's MacOS response is `/Users/kzqv978`:
 
 ```bash
 $ pwd
@@ -191,22 +192,21 @@ Once you have pressed `Tab`, the command line will fill in the rest of the direc
 Now change directories to `untrimmed_fastq` in `shell_data`
 
 ```bash
-$ cd shell_data
-$ cd untrimmed_fastq
+$ cd shell_data/untrimmed_fastq
 ```
 
-Using tab complete can be very helpful. However, it will only autocomplete a file or directory name if you have typed enough characters to provide a unique identifier for the file or directory you are trying to access.
+Using tab completion can be very helpful. However, it will only autocomplete a file or directory name if you have typed enough characters to provide a unique identifier for the file or directory you are trying to access, othwerwise it will show you the different options
 
 For example, if we now try to list the files which names start with `SR` by using tab complete:
 
 ```bash
-$ ls SR<tab>
+$ ls SR<Tab>
 ```
 
 The shell auto-completes your command to `SRR09`, because all file names in the directory begin with this prefix. When you hit `Tab` again, the shell will list the possible choices.
 
 ```bash
-$ ls SRR09<tab><tab>
+$ ls SRR09<Tab><Tab>
 ```
 ```
 SRR097977.fastq  SRR098026.fastq
@@ -215,24 +215,24 @@ SRR097977.fastq  SRR098026.fastq
 Tab completion can also fill in the names of programs, which can be useful if you remember the beginning of a program name.
 
 ```bash
-$ pw<tab><tab>
+$ pw<Tab><Tab>
 ```
 ```
 pwd         pwd_mkdb    pwhich      pwhich5.18  pwhich5.28  pwpolicy    
 ```
 
-Please note that the results of the latter command will be different depending on your operating system
+**Note**: the results of the latter command will be different depending on your operating system
 
 
 ### Summary 1
 
-We now know how to move around our file system using the command line. This gives us an advantage over interacting with the file system through a GUI (e.g. Finder in MacOS) as it allows us to work on a remote server, carry out the same set of operations on a large number of files quickly, and opens up many opportunities for using bioinformatics software that is only available in command line versions.
+We now know how to move around our filesystem using the command line. This gives us an advantage over interacting with the file system through a GUI (e.g. Finder in MacOS) as it allows us to work on a remote server, carry out the same set of operations on a large number of files quickly, and opens up many opportunities for using bioinformatics software that is only available in command line versions.
 
-In the next sections, we’ll be expanding on these skills and seeing how using the command line shell enables us to make our workflow more efficient and reproducible.
+In the next sections, we’ll be expanding on these skills and seeing how using the command line enables us to make our workflow more efficient and reproducible.
 
 Key points:
 
-- The command line gives you the ability to work more efficiently by using keyboard commands rather than a GUI
+- The command line gives you the ability to work more effectively by using keyboard commands rather than a GUI
 - Useful commands for navigating your file system include: `ls`, `pwd` and `cd`
 - Most commands take options (flags) which begin with the symbol `-`
 - Tab completion can reduce errors from mistyping and make work more efficient in the shell
@@ -240,10 +240,72 @@ Key points:
 
 <img align="right" src=img/coffee.png width="300">
 
+
+
 ## 5 min break
 
-Take a short break before the next section
+Take a short break before starting with the next section :)
 
+
+
+## Navigating Files and Directories
+
+
+### Moving around the filesystem
+
+We’ve learned how to use `pwd` to find our current location within our filesystem. We’ve also learned how to use `cd` to change locations and `ls` to list the contents of a directory. Now we’re going to learn some additional commands for moving around within our filesystem.
+
+Use the commands we’ve learned so far to navigate to the `shell_data/untrimmed_fastq` directory, if you’re not already there.
+
+```bash
+$ cd ~/Desktop/shell_data/untrimmed_fastq
+```
+
+What if we want to move back up and out of this directory and to our top level directory? Can we type `cd shell_data`? Try it and see what happens.
+
+```bash
+$ cd shell_data
+```
+```
+-bash: cd: shell_data: No such file or directory
+```
+
+Your computer looked for a directory or file called `shell_data` within the directory you were already in. It didn’t know you wanted to look at a directory level above the one you were located in.
+
+We have a special command to tell the computer to move us back or up one directory level.
+
+```bash
+$ cd ..
+```
+
+Now we can use `pwd` to make sure that we are in the directory we intended to navigate to, and `ls` to check that the contents of the directory are correct.
+
+```bash
+$ pwd
+```
+```
+/Users/kzqv978/Desktop/shell_data
+```
+
+```bash
+$ ls
+```
+```
+sra_metadata	untrimmed_fastq
+```
+
+From this output, we can see that `..` did indeed take us back one level in our filesystem.
+
+You can chain these together like so:
+
+```bash
+$ ls ../..
+```
+
+prints the contents of `/Users/kzqv978`
+
+
+### Hidden directories
 
 
 
@@ -251,5 +313,7 @@ Take a short break before the next section
 
 ## License
 
-This practical is derived from the workshop [Introduction to the Command Line for Genomics](https://datacarpentry.org/shell-genomics/) &copy; The Carpentries, which is distributed under a [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/). For further command line topics including redirection, writing scripts and project organisation, check out episodes 4-6 of the Carpentries workshop
+This practical is derived from the workshop [Introduction to the Command Line for Genomics](https://datacarpentry.org/shell-genomics/) &copy; The Carpentries, which is distributed under a [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/). 
+
+For further command line topics including redirection, writing scripts and project organisation, check out episodes 4-6 of the Carpentries workshop
 
