@@ -96,7 +96,7 @@ $ pwd
 
 **Note**: The dollar `$` symbol is a prompt, which indicates that the command line is waiting for input. When typing commands, either from these practical or from other sources, do not type the prompt, only the commands that follow it. Your command line may use a character different from `$` to indicate a prompt and may add information before the prompt. If you type the command `PS1='$ '` into your command line, followed by pressing the `Enter` key, your window should look like our example in this lesson. This isn’t necessary to follow along (in fact, your prompt may have other helpful information you may want to know about). This is up to you!
 
-Let’s look at how our file system is organized. We can see what files and subdirectories are in this directory by running ls, which stands for "listing":
+Let’s look at how our *filesystem* is organized. We can see what files and subdirectories are in this directory by running `ls`, which stands for "listing":
 
 ```bash
 $ ls
