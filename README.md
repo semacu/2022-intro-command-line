@@ -123,7 +123,7 @@ $ ls
 sra_metadata	untrimmed_fastq
 ```
 
-We can make the ls output more comprehensible by using the flag -F, which tells ls to add a trailing / to the names of directories:
+We can make the `ls` output more comprehensible by using the flag -F, which tells `ls` to add a trailing / to the names of directories:
 
 ```bash
 $ ls -F
