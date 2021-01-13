@@ -40,7 +40,7 @@ Within the **Data Science for Bioinformatics** block, we are introducing the Uni
 
 Using the command line interface, we will demonstrate the basic structure of the Unix operating system and how we can interact with it using a basic set of commands. Applying this, we will learn how to navigate the filesystem, manipulate text-based data e.g. DNA sequencing `fastq` files and structure a simple pipeline out of these commands.
 
-It is possible to work through the practical on your laptop or local machine. To do this, you will need to download the data that we will use in the practical and start/install the command line if not available in your device. Instructions for doing this are below.
+It is possible to work through the practical on your laptop or local machine. To do this, you will need to download the data that we will use in the practical and start or install the command line if not available in your device. Instructions for doing this are below.
 
 
 ### Data
