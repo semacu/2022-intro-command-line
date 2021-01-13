@@ -83,9 +83,9 @@ To start the command line depending on your operating system, have a look at the
 
 ### Navigating your file system
 
-The part of the operating system responsible for managing files and directories is called the file system. It organizes our data into files, which hold information, and directories (also called "folders"), which hold files or other directories. Several commands are frequently used to create, inspect, rename, and delete files and directories.
+The part of the operating system responsible for managing files and directories is called the *filesystem*. It organizes our data into files, which hold information, and directories (also called "folders"), which hold files or other directories. Several commands are frequently used to create, inspect, rename, and delete files and directories.
 
-Let’s find out where we are by running a command called `pwd` (which stands for "print working directory"). At any moment, our current working directory is our current default directory, i.e., the directory that the computer assumes we want to run commands in, unless we explicitly specify something else. Here, the computer’s response is `/Users/kzqv978`, which is the top level directory within our cloud system:
+Let’s find out where we are by running a command called `pwd` (which stands for "print working directory"). At any moment, our current working directory is our current default directory, i.e., the directory that the computer assumes we want to run commands in, unless we explicitly specify something else. Here, my laptop's macOS response is `/Users/kzqv978`:
 
 ```bash
 $ pwd
