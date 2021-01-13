@@ -172,7 +172,7 @@ This directory contains two files with `.fastq` extensions. fastq is a format fo
 
 ### Tab Completion
 
-Typing out file or directory names can waste a lot of time and it’s easy to make typing mistakes. Instead we can use tab to autocomplete names as a shortcut. When you start typing out the name of a file or directory, then hit the `Tab` keyboard key, the command line will try to fill in the rest of the directory or file name.
+Typing out file or directory names can waste a lot of time and it’s easy to make typing mistakes. Instead we can use `Tab` to autocomplete names as a shortcut. When you start typing out the name of a file or directory, then hit the `Tab` keyboard key, the command line will try to fill in the rest of the directory or file name.
 
 Return to your Desktop:
 
@@ -183,10 +183,10 @@ $ cd ~/Desktop  # in command line jargon ~ means the home directory
 then enter:
 
 ```bash
-$ cd she<tab>
+$ cd she<Tab>   # here <Tab> means that you press the keyboard button
 ```
 
-Once you press `Tab`, the command line will fill in the rest of the directory name for `shell_data`
+Once you have pressed `Tab`, the command line will fill in the rest of the directory name for `shell_data`
 
 Now change directories to `untrimmed_fastq` in `shell_data`
 
