@@ -167,7 +167,7 @@ $ ls -F
 SRR097977.fastq		SRR098026.fastq
 ```
 
-This directory contains two files with `.fastq` extensions. fastq is a format for storing information about sequencing reads and their quality. 
+This directory contains two files with `.fastq` extensions. fastq is a format for storing information about DNA sequencing reads and their quality. 
 
 
 ### Tab Completion
