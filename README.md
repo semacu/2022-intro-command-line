@@ -18,7 +18,7 @@
   - [Navigating your filesystem](README.md#navigating-your-file-system)
   - [Tab completion](README.md#tab-completion)
   - [Summary 1](README.md#summary-1)
-- [Navigating Files and Directories](README.md#navigating-diles-and-directories)
+- [Navigating Files and Directories](README.md#navigating-files-and-directories)
   - [Moving around the filesystem](README.md#moving-around-the-filesystem)
   - [Hidden directories](README.md#hidden-directories)
   - [Examining the contents of other directories](README.md#)
