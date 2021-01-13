@@ -60,7 +60,7 @@ The data is available to download [here](https://github.com/semacu/2021-intro-co
 
 ## Introducing the command line
 
-A command line is a computer program that presents an interface which allows you to control your computer using commands entered with a keyboard instead of controlling graphical user interfaces (GUIs) with a mouse/keyboard combination.
+A **command line** is a computer program that presents an interface which allows you to control your computer using commands entered with a keyboard instead of clicking with the mouse on a Graphical User Interface (GUI).
 
 There are many reasons to learn about the command line:
 
