@@ -1,10 +1,10 @@
-<img align="right" src=img/course_logo.png width="200">
+<img align="right" src=img/course_logo.png width="250">
 
 # Introduction to the Command Line
 
 - Practical: Monday 18th January 2021 3-5pm (GMT)
-- Pre-recorded video materials for self-paced study with zoom support during the date of the practical
-- Questions:  helpdesk Q&A available in practical section in the [VLE](https://www.vle.cam.ac.uk/course/view.php?id=106822)
+- Pre-recorded video materials for self-paced study with zoom support during the date/time of the practical
+- Questions: helpdesk Q&A available in practical section in the [VLE](https://www.vle.cam.ac.uk/course/view.php?id=106822)
 - Course [booklet](https://e.issuu.com/anonymous-embed.html?u=bioinfocambs&d=nstiibbsbioinformatics_20-21)
 
 
