@@ -335,7 +335,7 @@ $ cd
 Then enter the command:
 
 ```bash
-ls Course_Materials/shell_data
+$ ls Course_Materials/shell_data
 ```
 ```
 sra_metadata	untrimmed_fastq
@@ -354,12 +354,12 @@ $ cd Course_Materials/shell_data/untrimmed_fastq
 
 This will take you to the `untrimmed_fastq` directory without having to stop over an intermediate directory.
 
-**Note:** running the command `cd` is equivalent to `cd ~`, which is also equivalent to `cd /home/ubuntu`. They all take us to the home directory
+**Note:** running the command `cd` is equivalent to `cd ~`, which is also equivalent to `cd /home/ubuntu`. They all take us to the home directory. Although you may think that the home directory is `/home`, in most Unix systems it is actually `/home/ubuntu`
 
 
 ### Full versus Relative paths
 
-The `cd` command takes an argument which is a directory name. Directories can be specified using either a *relative* path or a *absolute* path. The directories on the computer are arranged into a hierarchy. The full path tells you where a directory is in that hierarchy. Navigate to the home directory, then enter the `pwd` command.
+The `cd` command takes an argument which is a directory name. Directories can be specified using either a *relative* path or an *absolute* path. The directories on the computer are arranged into a hierarchy. The full path tells you where a directory is in that hierarchy. Navigate to the home directory, then enter the `pwd` command.
 
 ```bash
 $ cd
