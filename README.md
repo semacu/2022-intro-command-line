@@ -17,8 +17,6 @@ Alexia Cardona, Sergio Martínez Cuesta, Argyris Zardilis, Paul Judge and Cathy 
 ## Contents
 
 - [Overview and setup](README.md#overview-and-setup)
-  - [Data](README.md#data)
-  - [Command line](README.md#command-line)
 - [Introducing the command line](README.md#introducing-the-command-line)
   - [Access the command line](README.md#access-the-command-line)
   - [Navigating your filesystem](README.md#navigating-your-file-system)
