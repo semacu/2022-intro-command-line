@@ -449,6 +449,12 @@ Key points:
 - *Relative* paths specify a location starting from the current location, while *absolute* paths specify a location from the root of the filesystem
 - Hidden files and directories start with `.` and can be viewed using `ls -a`
 
+<img align="right" src=img/coffee.png width="300">
+
+## 5 min break
+
+Take a short break before starting with the next section :)
+
 
 
 ## Working with Files and Directories
@@ -737,6 +743,12 @@ $ rm -r backup
 
 This will delete not only the directory, but all files within the directory. If you have write-protected files in the directory, you will be asked whether you want to override your permission settings.
 
+#### Summary
+
+- You can view file contents using `less`, `cat`, `head` or `tail`
+- The commands `cp`, `mv` and `mkdir` are useful for manipulating existing files and creating new directories
+- You can view file permissions using `ls -l` and change permissions using `chmod`
+- The `history` command and the up arrow on your keyboard can be used to repeat recently used commands.
 
 #### Exercise 1
 
@@ -747,19 +759,9 @@ Starting in the `shell_data/untrimmed_fastq/` directory, do the following:
 3. Use a wildcard to move all of your backup files to a new backup directory.
 4. Change the permissions on all of your backup files to be write-protected.
 
-
 #### Solution 1
 
 Take five minutes to try out the steps above, then check out the [solution](ex/solution1.md)
-
-
-#### Summary
-
-- You can view file contents using `less`, `cat`, `head` or `tail`
-- The commands `cp`, `mv` and `mkdir` are useful for manipulating existing files and creating new directories
-- You can view file permissions using `ls -l` and change permissions using `chmod`
-- The `history` command and the up arrow on your keyboard can be used to repeat recently used commands.
-
 
 Thank you for your attention! :smile:
 
