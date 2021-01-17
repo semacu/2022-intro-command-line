@@ -750,17 +750,23 @@ Starting in the `shell_data/untrimmed_fastq/` directory, do the following:
 
 #### Solution 1
 
-Take five minutes to try out the steps above, then check out the [solution](exercises/solution1.md)
+Take five minutes to try out the steps above, then check out the [solution](ex/solution1.md)
 
 
 #### Summary
 
+- You can view file contents using `less`, `cat`, `head` or `tail`
+- The commands `cp`, `mv` and `mkdir` are useful for manipulating existing files and creating new directories
+- You can view file permissions using `ls -l` and change permissions using `chmod`
+- The `history` command and the up arrow on your keyboard can be used to repeat recently used commands.
+
+
+Thank you for your attention! :smile:
+
+For further command line topics including redirection, writing scripts and project organisation, check out episodes 4-6 of the [Introduction to the Command Line for Genomics by The Carpentries](https://datacarpentry.org/shell-genomics/)
 
 
 
 ## License
 
 This practical is derived from the workshop [Introduction to the Command Line for Genomics](https://datacarpentry.org/shell-genomics/) &copy; The Carpentries, which is distributed under a [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/). 
-
-For further command line topics including redirection, writing scripts and project organisation, check out episodes 4-6 of the Carpentries workshop
-
