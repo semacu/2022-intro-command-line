@@ -55,6 +55,7 @@ The command line is already available in the computer enviroment prepared for th
 
 <div align="center">Computer enviroment prepared for the practical</div>
 
+
 **Note:** optional -- if you want to follow the practical in your own laptop after the course, you can start/install the command line using the following instructions:
 
   - **MacOS**: to start the command line go to `Applications` -> `Utilities` -> `Terminal`. Alternatively, in your keyboard press the Command button and the space bar  simultaneously, type "Terminal" (as you type it should auto-fill) and double click "Terminal" in the left sidebar
