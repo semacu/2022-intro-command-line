@@ -164,7 +164,6 @@ The option `-l` option for the `ls` command is used often as it displays more de
 $ ls -l
 ```
 ```
-total 8
 drwxr-x--- 2 ubuntu  ubuntu   4096 30 Jul  2015 sra_metadata
 drwxr-xr-x 2 ubuntu  ubuntu   4096 15 Nov  2017 untrimmed_fastq
 ```
@@ -691,7 +690,6 @@ View the current permissions on a file using the `-l` (long) flag for the `ls` c
 $ ls -l
 ```
 ```
-total 44
 -rw-r--r-- 1 ubuntu ubuntu 43332 Jan 17 22:55 SRR098026-backup.fastq
 ```
 
@@ -700,6 +698,63 @@ The first part of the output for the `-l` flag gives you information about the f
 <p align="center">
   <img width="500" src=img/permissions.png>
 </p>
+
+Here the three positions that relate to the file owner are `rw-`. The `r` means that you have permission to read the file, the `w` indicates that you have permission to write to (i.e. make changes to) the file, and the third position is a `-`, indicating that you don’t have permission to carry out the ability encoded by that third space (this is the space where `x` or executable ability is stored).
+
+Our goal for now is to change permissions on this file so that you no longer have `w` or write permissions. We can do this using the `chmod` (change mode) command and subtracting `-` the write permission `-w`.
+
+```bash
+$ chmod -w SRR098026-backup.fastq
+$ ls -l 
+```
+```
+-r--r--r-- 1 ubuntu ubuntu 43332 Jan 17 22:55 SRR098026-backup.fastq
+```
+
+#### Removing
+
+To prove to ourselves that you no longer have the ability to modify this file, try deleting it with the `rm` command:
+
+```bash
+$ rm SRR098026-backup.fastq
+```
+```
+rm: remove write-protected regular file 'SRR098026-backup.fastq'? 
+```
+
+You should enter `n` for no. If you enter `n` (for no), the file will not be deleted. If you enter `y`, you will delete the file. This gives us an extra measure of security, as there is one more step between us and deleting our data files.
+
+Important: The `rm` command permanently removes the file. Be careful with this command. It doesn’t just nicely put the files in the Trash. They’re really gone.
+
+By default, `rm` will not delete directories. You can tell `rm` to delete a directory using the `-r` (recursive) option. Let’s delete the backup directory we just made.
+
+Enter the following command:
+
+```bash
+$ cd ..
+$ rm -r backup
+```
+
+This will delete not only the directory, but all files within the directory. If you have write-protected files in the directory, you will be asked whether you want to override your permission settings.
+
+
+#### Exercise 1
+
+Starting in the `shell_data/untrimmed_fastq/` directory, do the following:
+
+1. Make sure that you have deleted your `backup` directory and all files it contains.
+2. Create a backup of each of your FASTQ files using `cp`. (Note: You’ll need to do this individually for each of the two FASTQ files. We haven’t learned yet how to do this with a wildcard.)
+3. Use a wildcard to move all of your backup files to a new backup directory.
+4. Change the permissions on all of your backup files to be write-protected.
+
+
+#### Solution 1
+
+Take five minutes to try out the steps above, then check out the [solution](exercises/solution1.md)
+
+
+#### Summary
+
 
 
 
