@@ -8,6 +8,12 @@
 
 
 
+## Trainers
+
+Alexia Cardona, Sergio Martínez Cuesta, Argyris Zardilis, Paul Judge and Cathy Hemmings
+
+
+
 ## Contents
 
 - [Overview and setup](README.md#overview-and-setup)
@@ -17,21 +23,16 @@
   - [Access the command line](README.md#access-the-command-line)
   - [Navigating your filesystem](README.md#navigating-your-file-system)
   - [Tab completion](README.md#tab-completion)
-  - [Summary 1](README.md#summary-1)
 - [Navigating Files and Directories](README.md#navigating-files-and-directories)
   - [Moving around the filesystem](README.md#moving-around-the-filesystem)
   - [Hidden directories](README.md#hidden-directories)
   - [Examining the contents of other directories](README.md#)
   - [Full versus Relative paths](README.md#)
-  - [Exercise 1](README.md#)
-  - [Summary 2](README.md#)
 - [Working with Files and Directories](README.md#)
   - [Working with Files](README.md#)
   - [Command History](README.md#)
   - [Examining Files](README.md#)
   - [Creating, moving, copying, and removing](README.md#)
-  - [Exercise 2](README.md#)
-  - [Summary 3](README.md#)
 
 
 
@@ -41,21 +42,33 @@ Within the **Data Science for Bioinformatics** block, we are introducing the Uni
 
 Using the command line interface, we will demonstrate the basic structure of the Unix operating system and how we can interact with it using a basic set of commands. Applying this, we will learn how to navigate the filesystem, manipulate text-based data e.g. DNA sequencing `fastq` files and structure a simple pipeline out of these commands.
 
-It is possible to work through the practical on your laptop or local machine. To do this, you will need to download the data that we will use in the practical and start or install the command line if not available in your device. Instructions for doing this are below.
+The practical demostration is recorded using the Apache Guacamole environment in place for the practical. Please follow the access details sent to you by Paul Judge and Alexia Cardona.
 
-
-### Data
-
-The data is available to download [here](https://github.com/semacu/2021-intro-command-line/blob/main/data/shell_data.zip). Click the `Download` button and save the `shell_data.zip` file into your Desktop. Then navigate to your Desktop and double-click on the zip file to uncompress it. A directory call `shell_data/` should be available
+**Note:** optional -- it is possible to work through the practical in your own laptop or local machine after the course. To do this, you will need to start/install the command line and download the data for the practical following the instructions below.
 
 
 ### Command line
 
-**MacOS**: to start the command line go to `Applications` -> `Utilities` -> `Terminal`. Alternatively, in your keyboard press the Command button and the space bar  simultaneously, type "Terminal" (as you type it should auto-fill) and double click "Terminal" in the left sidebar
+The command line is already available in the computer enviroment prepared for the practical. Log in into the environment using your access details and click on the option `desktop` in the selection window. A display similar to the one shown below will be available:
 
-**Windows**: computers with Windows do not automatically have a Unix command line program installed. To install the Unix command line in Windows, follow this [video](https://www.youtube.com/watch?v=339AEqk9c-8) and/or the instructions available in the Windows tab [here](https://carpentries.github.io/workshop-template/#shell)
+<p align="center">
+  <img width="500" src=img/guacamole.png>
+</p>
 
-**Linux**: use the Terminal icon displayed in the main toolbar of most distributions (e.g. Ubuntu) to open the command line
+<div align="center">Computer enviroment prepared for the practical</div>
+
+**Note:** optional -- if you want to follow the practical in your own laptop after the course, you can start/install the command line using the following instructions:
+
+  - **MacOS**: to start the command line go to `Applications` -> `Utilities` -> `Terminal`. Alternatively, in your keyboard press the Command button and the space bar  simultaneously, type "Terminal" (as you type it should auto-fill) and double click "Terminal" in the left sidebar
+  - **Windows**: computers with Windows do not automatically have a Unix command line program installed. To install the Unix command line in Windows, follow this [video](https://www.youtube.com/watch?v=339AEqk9c-8) and/or the instructions available in the Windows tab [here](https://carpentries.github.io/workshop-template/#shell)
+  - **Linux**: use the Terminal icon displayed in the main toolbar of most distributions (e.g. Ubuntu) to open the command line
+
+
+### Data
+
+The data for the practical is already available in the course environment in the directory: `/home/ubuntu/Course_Materials/shell_data/`
+
+**Note:** optional -- if you want to follow the practical in your own laptop after the course, the data is available to download [here](https://github.com/semacu/2021-intro-command-line/blob/main/data/shell_data.zip). Click the `Download` button and save the `shell_data.zip` file into your Desktop. Then navigate to your Desktop and double-click on the zip file to uncompress it. A directory call `shell_data/` should then be available
 
 
 
@@ -74,7 +87,7 @@ There are many reasons to learn about the command line:
   <img width="500" src=img/cli_vs_gui.png>
 </p>
 
-<div align="center">Figure 1. Command line (top) vs GUI (bottom)</div>
+<div align="center">Command line (top) vs GUI (bottom)</div>
 
 
 ### Access the command line
