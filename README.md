@@ -1,4 +1,4 @@
-<img align="right" src=img/course_logo.png width="250">
+<img align="right" src=img/course_logo.png width="300">
 
 # Introduction to the Command Line
 
