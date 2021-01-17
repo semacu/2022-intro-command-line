@@ -763,7 +763,9 @@ Take five minutes to try out the steps above, then check out the [solution](ex/s
 
 Thank you for your attention! :smile:
 
-For further command line topics including redirection, writing scripts and project organisation, check out episodes 4-6 of the [Introduction to the Command Line for Genomics by The Carpentries](https://datacarpentry.org/shell-genomics/)
+If you are interested to continue learning more about the command line and would like to try searching and writing for loops in fastq files presented here, check out lecture 4 of the [Introduction to the Command Line for Genomics by The Carpentries](https://datacarpentry.org/shell-genomics/04-redirection/index.html). 
+
+Have fun!
 
 
 
