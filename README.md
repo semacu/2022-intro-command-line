@@ -102,16 +102,16 @@ To start the command line follow the instructions described in the [Setup sectio
 
 The part of the operating system responsible for managing files and directories is called the *filesystem*. It organizes our data into files, which hold information, and directories (also called "folders"), which hold files or other directories. Several commands are frequently used to create, inspect, rename, and delete files and directories.
 
-Let’s find out where we are by running a command called `pwd` (which stands for "print working directory"). At any moment, our current working directory is our current default directory, i.e., the directory that the computer assumes we want to run commands in, unless we explicitly specify something else. Here, my laptop's MacOS response is `/Users/kzqv978`:
+Let’s find out where we are by running a command called `pwd` (which stands for "print working directory"). At any moment, our current working directory is our current default directory, i.e., the directory that the computer assumes we want to run commands in, unless we explicitly specify something else.
 
 ```bash
 $ pwd
 ```
 ```
-/Users/kzqv978
+/home/ubuntu/Course_Materials
 ```
 
-**Note**: The dollar `$` symbol is a prompt, which indicates that the command line is waiting for input. When typing commands, either from these practical or from other sources, do not type the prompt, only the commands that follow it. Your command line may use a character different from `$` to indicate a prompt and may add information before the prompt. If you type the command `PS1='$ '` into your command line, followed by pressing the `Enter` key, your window should look like our example in this lesson. This isn’t necessary to follow along (in fact, your prompt may have other helpful information you may want to know about). This is up to you!
+**Note**: The dollar `$` symbol is a prompt, which indicates that the command line is waiting for input. When typing commands, either from these practical or from other sources, do not type the prompt, only the commands that follow it. Your command line may use a character different from `$` to indicate a prompt and may add information before the prompt. If you type the command `PS1='$ '` into your command line, followed by pressing the `Enter` key, your window should look like our example in this practical. This isn’t necessary to follow along (in fact, your prompt may have other helpful information you may want to know about). This is up to you!
 
 Let’s look at how our *filesystem* is organized. We can see what files and subdirectories are in this directory by running `ls`, which stands for "listing":
 
@@ -119,15 +119,14 @@ Let’s look at how our *filesystem* is organized. We can see what files and sub
 $ ls
 ```
 ```
-Applications	Desktop		Documents	Downloads	Library		Movies		Music		Pictures	Public
+shell_data
 ```
 
-`ls` prints the names of the files and directories in the current directory in alphabetical order, arranged neatly into columns. We’ll be working within the `Desktop/` subdirectory where we downloaded and created the `shell_data/` directory. The command to change locations in our file system is `cd`, followed by a directory name to change our working directory. `cd` stands for "change directory".
+`ls` prints the names of the files and directories in the current directory in alphabetical order, arranged neatly into columns. We’ll be working within the `shell_data/` subdirectory containing the files for the practical. The command to change locations in our filesystem is `cd`, followed by a directory name to change our working directory. `cd` stands for "change directory".
 
-Let’s say we want to navigate to the `shell_data/` directory we created above. We can use the following commands to get there:
+Let’s say we want to navigate to the `shell_data/` directory we created above. We can use the following command to get there:
 
 ```bash
-$ cd Desktop
 $ cd shell_data
 ```
 
@@ -165,9 +164,9 @@ The option `-l` option for the `ls` command is used often as it displays more de
 $ ls -l
 ```
 ```
-total 0
-drwxr-x---@ 3 kzqv978  RD\Domain Users    96B 30 Jul  2015 sra_metadata
-drwxr-xr-x@ 4 kzqv978  RD\Domain Users   128B 15 Nov  2017 untrimmed_fastq
+total 8
+drwxr-x--- 2 ubuntu  ubuntu   4096 30 Jul  2015 sra_metadata
+drwxr-xr-x 2 ubuntu  ubuntu   4096 15 Nov  2017 untrimmed_fastq
 ```
 
 The additional information given includes the name of the owner of the file, when the file was last modified, and whether the current user has permission to read and write to the file, as we will see later
@@ -184,7 +183,14 @@ $ ls -F
 SRR097977.fastq		SRR098026.fastq
 ```
 
-This directory contains two files with `.fastq` extensions. fastq is a format for storing information about DNA sequencing reads and their quality. 
+This directory contains two files with `.fastq` extensions. fastq is a format for storing information about DNA sequencing reads and their quality.
+
+At the end of the day after a long stream of typing commands, you may want to clean all the output of your command line. To do so, type the command `clear`:
+
+```bash
+$ clear
+```
+
 
 
 ### Tab Completion
