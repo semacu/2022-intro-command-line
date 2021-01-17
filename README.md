@@ -763,7 +763,7 @@ Take five minutes to try out the steps above, then check out the [solution](ex/s
 
 Thank you for your attention! :smile:
 
-If you are interested to continue learning more about the command line and would like to try searching and writing for loops in fastq files presented here, check out lecture 4 of the [Introduction to the Command Line for Genomics by The Carpentries](https://datacarpentry.org/shell-genomics/04-redirection/index.html). 
+As a bonus to continue learning about the command line at your own pace if you are interested: try the advanced searching of sequences in the fastq files and the writing of `for` loops in lecture 4 of the [Introduction to the Command Line for Genomics by The Carpentries](https://datacarpentry.org/shell-genomics/04-redirection/index.html). 
 
 Have fun!
 
