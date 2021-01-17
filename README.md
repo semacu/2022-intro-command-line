@@ -24,10 +24,10 @@ Alexia Cardona, Sergio Martínez Cuesta, Argyris Zardilis, Paul Judge and Cathy 
   - [Tab completion](README.md#tab-completion)
 - [Navigating Files and Directories](README.md#navigating-files-and-directories)
   - [Moving around the filesystem](README.md#moving-around-the-filesystem)
-  - [Hidden directories](README.md#hidden-directories)
-  - [Examining the contents of other directories](README.md#)
-  - [Full versus Relative paths](README.md#)
-- [Working with Files and Directories](README.md#)
+  - [Examining the contents of other directories](README.md#examining-the-contents-of-other-directories)
+  - [Full versus Relative paths](README.md#full-versus-relative-paths)
+  - [Hidden directories and files](README.md#hidden-directories-and-files)
+- [Working with Files and Directories](README.md#working-with-files-and-directories)
   - [Working with Files](README.md#)
   - [Command History](README.md#)
   - [Examining Files](README.md#)
@@ -277,10 +277,10 @@ We’ve learned how to use `pwd` to find our current location within our filesys
 Use the commands we’ve learned so far to navigate to the `shell_data/untrimmed_fastq` directory, if you’re not already there.
 
 ```bash
-$ cd ~/Desktop/shell_data/untrimmed_fastq
+$ cd ~/Course_Materials/shell_data/untrimmed_fastq
 ```
 
-What if we want to move back up and out of this directory and to our top level directory? Can we type `cd shell_data`? Try it and see what happens.
+What if we want to move back up and out of this directory e.g. onto our top level directory? Can we type `cd shell_data`? Try it and see what happens.
 
 ```bash
 $ cd shell_data
@@ -297,13 +297,13 @@ We have a special command to tell the computer to move us back or up one directo
 $ cd ..
 ```
 
-Now we can use `pwd` to make sure that we are in the directory we intended to navigate to, and `ls` to check that the contents of the directory are correct.
+Now we can use `pwd` to make sure that we are in the directory we intended to go, and `ls` to check that the contents of the directory are correct.
 
 ```bash
 $ pwd
 ```
 ```
-/Users/kzqv978/Desktop/shell_data
+/home/ubuntu/Course_Materials/shell_data
 ```
 
 ```bash
@@ -321,11 +321,138 @@ You can chain these together like so:
 $ ls ../..
 ```
 
-prints the contents of `/Users/kzqv978`
+which prints the contents of `/home/ubuntu`
 
 
-### Hidden directories
+### Examining the contents of other directories
 
+By default, the `ls` command lists the contents of the working directory (i.e. the directory you are in). You can always find the directory you are in using the `pwd` command. However, you can also give `ls` the names of other directories to view. Navigate to your home directory if you are not already there.
+
+```bash
+$ cd
+```
+
+Then enter the command:
+
+```bash
+ls Course_Materials/shell_data
+```
+```
+sra_metadata	untrimmed_fastq
+```
+
+This will list the contents of the `shell_data` directory without you needing to navigate there.
+
+The `cd` command works in a similar way.
+
+Try entering:
+
+```bash
+$ cd
+$ cd Course_Materials/shell_data/untrimmed_fastq
+```
+
+This will take you to the `untrimmed_fastq` directory without having to stop over an intermediate directory.
+
+**Note:** running the command `cd` is equivalent to `cd ~`, which is also equivalent to `cd /home/ubuntu`. They all take us to the home directory
+
+
+### Full versus Relative paths
+
+The `cd` command takes an argument which is a directory name. Directories can be specified using either a *relative* path or a *absolute* path. The directories on the computer are arranged into a hierarchy. The full path tells you where a directory is in that hierarchy. Navigate to the home directory, then enter the `pwd` command.
+
+```bash
+$ cd
+$ pwd
+```
+```
+/home/ubuntu
+```
+
+This is the *absolute* path of your home directory. This tells you that you are in a directory called `ubuntu`, which sits inside a directory called `home` which sits inside the very top directory in the hierarchy. The very top of the hierarchy is a directory called `/` which is usually referred to as the root directory. So, to summarize: `ubuntu` is a directory in `home` which is a directory in `/`.
+
+If we want to get to `untrimmed_fastq` using the *absolute* path, enter the following command:
+
+```bash
+$ cd /home/ubuntu/Course_Materials/shell_data/untrimmed_fastq
+```
+
+Alternatively, if you want to get to the same directory using a `relative` path:
+
+```bash
+$ cd 
+$ cd Course_Materials/shell_data/untrimmed_fastq
+```
+
+These two commands have the same effect, they both take us to the `untrimmed_fastq` directory. The first uses the *absolute* path, giving the full address from the `home` directory. The second uses a *relative* path, giving only the address from the working directory. An *absolute* path always starts with a `/`. A *relative* path does not.
+
+A *relative* path is like getting directions from someone on the street. They tell you to “go right at the stop sign, and then turn left on Main Street”. That works great if you’re standing there together, but not so well if you’re trying to tell someone how to get there from another country. An *absolute* path is like the GPS coordinates. It tells you exactly where something is no matter where you are right now.
+
+You can usually use either an *absolute* path or a *relative* path depending on what is most convenient. If we are in the `home` directory, it is more convenient to enter the *absolute* path. If we are in the working directory, it is more convenient to enter the `relative` path since it involves less typing.
+
+Over time, it will become easier for you to keep a mental note of the structure of the directories that you are using and how to quickly navigate amongst them.
+
+
+### Hidden directories and files
+
+Hidden files and folders in Unix are often used to store settings and configuration information. They start with `.`, for example `.my_hidden_directory`. There is a hidden directory and a hidden file within the `shell_data` directory. Explore the options for `ls` to find out how to see hidden directories and list its contents.
+
+```bash
+$ man ls
+```
+
+The `-a` option is short for all and says that it causes `ls` to "not ignore entries starting with ." This is the option we want.
+
+```bash
+$ cd ~/Course_Materials/shell_data
+$ ls -a
+```
+```bash
+.  ..  .DS_Store  .hidden	sra_metadata  untrimmed_fastq
+```
+
+The name of the hidden directory is `.hidden` and the name of the hidden file is `.DS_Store`. We can navigate to the `.hidden` directory using `cd`
+
+```bash
+$ cd .hidden
+```
+
+And then list the contents of the directory using `ls`
+
+```bash
+$ ls
+```
+```
+youfoundit.txt
+```
+
+The name of the text file in the hidden directory is `youfoundit.txt`
+
+
+### Summary
+
+The root directory is the highest level directory in your filesystem and contains files that are important for your computer to perform its daily work. While you will be using the root (`/`) at the beginning of your *absolute* paths, it is important that you avoid working with data in these higher-level directories, as your commands can permanently alter files that the operating system needs to function. 
+
+In many cases, trying to run commands in root directories will require special permissions which are not discussed here, so it’s best to avoid them and work within your `home` directory. Dealing with the `home` directory is very common. The tilde character, `~`, is a shortcut for your `home` directory. In our case, the root directory is two levels above our home directory, so `cd` or `cd ~ `will take you to `/home/ubuntu` and cd `/` will take you to `/`.
+
+The commands `cd` and `cd ~` are very useful for quickly navigating back to your `home` directory. We will be using the `~` character in later sections to specify our `home` directory.
+
+Note that in most commands the flags can be combined together in no particular order to obtain the desired results/output.
+
+```bash
+$ cd ~/Course_Materials/shell_data
+$ ls -Fla
+```
+
+Key points:
+
+- The `/`, `~`, and `..` characters represent important navigational shortcuts
+- *Relative* paths specify a location starting from the current location, while *absolute* paths specify a location from the root of the filesystem
+- Hidden files and directories start with `.` and can be viewed using `ls -a`
+
+
+
+## Working with Files and Directories
 
 
 
