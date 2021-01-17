@@ -48,7 +48,10 @@ The practical demostration is recorded using the Apache Guacamole environment in
 
 ### Command line
 
-The command line is already available in the computer enviroment prepared for the practical. Log in into the environment using your access details and click on the option `desktop` in the selection window. A display similar to the one shown below will be available:
+The command line is already available in the computer enviroment prepared for the practical. 
+
+- Log in into the environment using your access details and click on the option `desktop` in the selection window. A display similar to the one below will become available
+- Once in the Desktop, click on the `Terminal Emulator. Click the command line` button. A black command line box like the one displayed below will appear
 
 <p align="center">
   <img width="500" src=img/guacamole.png>
