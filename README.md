@@ -95,7 +95,7 @@ There are many reasons to learn about the command line:
 
 ### Access the command line
 
-To start the command line depending on your operating system, have a look at the [Setup section](README.md#setup). We will spend most of our time learning about the basics of the command line by manipulating some experimental data
+To start the command line follow the instructions described in the [Setup section](README.md#setup) above
 
 
 ### Navigating your filesystem
