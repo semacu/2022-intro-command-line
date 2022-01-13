@@ -4,14 +4,14 @@
 
 - Practical helpdesk: Thursday 20th January 2022 4-5pm (GMT)
 - Pre-recorded video materials for self-paced study with in-person support during the date/time of the practical helpdesk
-- Questions: helpdesk Q&A available in practical section in the [VLE](https://www.vle.cam.ac.uk/course/view.php?id=106822)
-- Course [booklet](https://e.issuu.com/anonymous-embed.html?u=bioinfocambs&d=nstiibbsbioinformatics_20-21)
+- Questions: helpdesk Q&A available in practical section in the [VLE](https://www.vle.cam.ac.uk/mod/forum/view.php?id=15938602)
+- Course [booklet](https://www.vle.cam.ac.uk/pluginfile.php/21923342/mod_resource/content/5/NSTIIBBSBioinformatics2122_full.pdf)
 
 
 
 ## Trainers
 
-Alexia Cardona, Sergio Martínez Cuesta, Argyris Zardilis, Paul Judge and Cathy Hemmings
+Sergio Martínez Cuesta, Alexia Cardona, Paul Judge and Cathy Hemmings
 
 
 
@@ -71,7 +71,7 @@ The command line is already available in the computer enviroment prepared for th
 
 The data for the practical is already available in the course environment in the directory: `/home/ubuntu/Course_Materials/shell_data/`
 
-**Note:** optional -- if you want to follow the practical in your own laptop after the course, the data is available to download [here](https://github.com/semacu/2021-intro-command-line/blob/main/data/shell_data.zip). Click the `Download` button and save the `shell_data.zip` file into your Desktop. Then navigate to your Desktop and double-click on the zip file to uncompress it. A directory call `shell_data/` should then be available
+**Note:** optional -- if you want to follow the practical in your own laptop after the course, the data is available to download [here](https://github.com/semacu/2022-intro-command-line/blob/main/data/shell_data.zip). Click the `Download` button and save the `shell_data.zip` file into your Desktop. Then navigate to your Desktop and double-click on the zip file to uncompress it. A directory call `shell_data/` should then be available
 
 
 
